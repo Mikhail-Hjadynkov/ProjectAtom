@@ -8,6 +8,15 @@
 
 using namespace std;
 
+enum TOKEN
+{
+	JEWEL=1,
+	LEAF,
+	DOLL,
+	CROWN,
+	BALL,
+};
+
 //Map matrix
 string map [10][10]
 {
@@ -133,7 +142,7 @@ void slots(int & money)
 			else
 			{
 				money -= bet;
-				cout << "What a pity!" << endl;
+				cout << "What a pity..." << endl;
 				cout << "You lose Rb$" << bet << "..." << endl << endl;
 				cout << ">> FINANCES" << endl;
 				cout << "Balance: Rb$" << money << endl << endl;
@@ -163,16 +172,17 @@ void slots(int & money)
 //Biryulki
 void biryulki(int & money)
 {
-	int bet, randomizer;
-	string token;
-	bool play = true;
+	int bet, randomizer, turn=0;
+	bool play = true, win = false;
 	while (play == true)
 	{
-		string option = "void";
+		vector<int>count{0,0,0,0,0};
+		vector<string>names{ "jewel","leaf","doll","crown","ball" };
+		string option = "void", token;
 		system("cls");
-		cout << "	      ---BIRYULKI---" << endl;
+		cout << "	     ---BIRYULKI---" << endl;
 		cout << "***Be the first in getting all your tokens and win!***" << endl;
-		cout << "  ++Write the number of the box and get the token!++ " << endl << endl;
+		cout << "      ++The longer the game, the more you earn!++ " << endl << endl;
 		cout << ">> FINANCES" << endl;
 		cout << "Balance: Rb$" << money << endl;
 		cout << "Bet: Rb$";
@@ -188,22 +198,93 @@ void biryulki(int & money)
 		}
 		else
 		{
-			cout << endl;
 			loader("tokens.txt");
-			while (token != "jewel"&&token != "leaf"&&token != "bread"&&token != "ball"&&token != "doll")
+			while (token != "jewel"&&token != "leaf"&&token != "crown"&&token != "ball"&&token != "doll")
 			{
 				cout << "Choose a token: ";
 				cin >> token;
 				lower(token);
-				if (token == "jewel" || token == "leaf" || token == "bread" || token == "ball" || token == "doll")
+				if (token == "jewel" || token == "leaf" || token == "crown" || token == "ball" || token == "doll")
 				{
 					cout << "Ok! Your token will be the " << token << endl;
 				}
 				else
 				{
-					cout << "That's an invalid token name... Be sure to write the token name." << endl;
+					cout << "That's an invalid token name... Be sure to write the token name." << endl << endl;
 				}
 			}
+			srand((int)time(0));
+			while (count[0] != 5 && count[1] != 5 && count[2] != 5 && count[3] != 5 && count[4] != 5)
+			{
+				turn++;
+				randomizer = (rand() % 5)+1;
+				switch (randomizer)
+				{
+
+				case JEWEL:
+					loader("jewel.txt");
+					cout << "The token number " << turn << " is a Jewel!" << endl << endl;
+					count[0]++;
+					break;
+				case LEAF:
+					loader("leaf.txt");
+					cout << "The token number " << turn << " is a Leaf!" << endl << endl;
+					count[1]++;
+					break;
+				case DOLL:
+					loader("doll.txt");
+					cout << "The token number " << turn << " is a Doll!" << endl << endl;
+					count[2]++;
+					break;
+				case CROWN:
+					loader("crown.txt");
+					cout << "The token number " << turn << " is a Crown!" << endl << endl;
+					count[3]++;
+					break;
+				case BALL:
+					loader("ball.txt");
+					cout << "The token number " << turn << " is a Ball!" << endl << endl;
+					count[4]++;
+					break;
+				}
+				cout << "TURN'S RESULTS" << endl;
+				cout << "The jewel has " << count[0] << " tokens!" << endl;
+				cout << "The leaf has " << count[1] << " tokens!" << endl;
+				cout << "The doll has " << count[2] << " tokens!" << endl;
+				cout << "The crown has " << count[3] << " tokens!" << endl;
+				cout << "The ball has " << count[4] << " tokens!" << endl << endl;
+
+				cout << "Press 'Enter' to advance to continue... " << endl;
+				cin.ignore();
+			}
+			for (int p = 0; p < count.size(); p++)
+			{
+				if (count[p] == 5 && names[p] == token)
+				{
+					win = true;
+				}
+			}
+			if (win == true)
+			{
+				bet*=turn;
+				money += bet;
+				cout << "CONGRATULATIONS!" << endl;
+				cout << "Your bet will be multiplied by " << turn << "!" << endl;
+				cout << "You win Rb$" << bet << "!" << endl << endl;
+				cout << ">> FINANCES" << endl;
+				cout << "Balance: Rb$" << money << endl;
+			}
+			else
+			{
+				
+				money -= bet;
+				cout << "What a pity..." << endl;
+				cout << "You lose Rb$" << bet << "..." << endl << endl;
+				cout << ">> FINANCES" << endl;
+				cout << "Balance: Rb$" << money << endl << endl;
+				
+			}
+
 		}
 		while (option != "yes" && option != "no")
 		{
@@ -230,20 +311,16 @@ int main()
 {
 	//Variable declarations
 	vector<string> commandline;
-	string command;
-	int money = 100;
+	string command, filename, retriever;
+	string core[1];
+	int money = 100, index = 0;
 
-	//Trialout menu
-	cout << "---MENU---" << endl;
-	cout << "<Play>" << endl;
-	cout << "-Sloty" << endl;
-	cout << "-Arkadiya" << endl;
-	cout << "-Gorodki" << endl;
-	cout << "-Biryulki" << endl;
-	cout << "-Svaika" << endl;
-	cout << endl << "---STATS---" << endl;
-	cout << "Hjadynivite Rayubi: " << money << endl;
-	cout << endl << "Insert a command: ";
+	//Trialout initial screen
+	cout << "PROJECT ATOM (C) TCCPe 2018" << endl << endl;
+	cout << "Input 'create' to create a new game." << endl;
+	cout << "Input 'load' to load a saved game." << endl;
+	cout << ">> ";
+	cin >> command;
 
 	//Command input
 	getline(cin, command);
@@ -253,6 +330,60 @@ int main()
 	{
 		commandline.push_back(s);
 	}
+
+	//Initial executor
+	if (commandline.size() == 1)
+	{
+		if (commandline[0] == "load");
+		{
+			cout << "Please write the file name." << endl;
+			cout << ">>";
+			cin >> filename;
+			ifstream ifs{ filename };
+			while (getline(ifs, retriever))
+			{
+				core[index]=retriever;
+				index++;
+				//if (isdigit(retriever[0]))
+				//{
+				//	cout << "-A decimal digit, " << endl;
+				//}
+				//if (isalpha(retriever[0]))
+				//{
+				//	cout << "-A letter, " << endl;
+				//}
+			}
+			//for (index = 0; index < core->size(); index++)
+			//{
+			//	switch (index)
+			//	{
+			//	case 1:
+			//		money = core[index];
+			//		default;
+			//	default:
+			//		break;
+			//	}
+			//}
+		}
+		else
+		{
+			cout << endl;
+		}
+	}
+	else
+	{
+		cout << ">> Command Overload!" << endl;
+	}
+
+	//Trialout menu
+	cout << "---MENU---" << endl;
+	cout << "<Play>" << endl;
+	cout << "-Sloty" << endl;
+	cout << "-Gorodki" << endl;
+	cout << "-Biryulki" << endl;
+	cout << endl << "---STATS---" << endl;
+	cout << "Hjadynivite Rayubi: " << money << endl;
+	cout << endl << "Insert a command: ";
 	
 	//Command executor
 	if (commandline.size() == 1)

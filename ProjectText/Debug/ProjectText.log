@@ -1,0 +1,5 @@
+﻿  ProjectText.cpp
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(52): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(86): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(261): warning C4018: '<': signed/unsigned mismatch
+  ProjectText.vcxproj -> C:\Users\missa\OneDrive\Documentos\TCCPe Archives\Project Text\Project Text Code\Debug\ProjectText.exe
