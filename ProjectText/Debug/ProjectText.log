@@ -1,0 +1,5 @@
+﻿  ProjectText.cpp
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(42): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(76): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(166): warning C4101: 'randomizer': unreferenced local variable
+  ProjectText.vcxproj -> C:\Users\missa\OneDrive\Documentos\TCCPe Archives\Project Text\Project Text Code\Debug\ProjectText.exe
