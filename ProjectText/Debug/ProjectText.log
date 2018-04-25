@@ -1,16 +1,36 @@
 ﻿  ProjectText.cpp
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(131): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(208): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(384): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(657): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(785): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(824): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(838): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(852): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(866): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(903): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1047): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1232): warning C4018: '<': signed/unsigned mismatch
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(126): warning C4715: 'btos': not all control paths return a value
-c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(113): warning C4715: 'stob': not all control paths return a value
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(187): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(301): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(478): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(538): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(558): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(570): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(598): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(611): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(624): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(637): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(655): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(668): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(685): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1200): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1325): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1448): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1488): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1522): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1527): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(1551): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(2381): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(2232): warning C4101: 'loss': unreferenced local variable
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(2741): warning C4101: 'sale_b': unreferenced local variable
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(2741): warning C4101: 'sale_a': unreferenced local variable
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3209): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3600): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3633): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3637): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3641): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3645): warning C4018: '<': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3807): warning C4018: '<=': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(3814): warning C4018: '<=': signed/unsigned mismatch
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(182): warning C4715: 'btos': not all control paths return a value
+c:\users\missa\onedrive\documentos\tccpe archives\project text\project text code\projecttext\projecttext.cpp(169): warning C4715: 'stob': not all control paths return a value
   ProjectText.vcxproj -> C:\Users\missa\OneDrive\Documentos\TCCPe Archives\Project Text\Project Text Code\Debug\ProjectText.exe
